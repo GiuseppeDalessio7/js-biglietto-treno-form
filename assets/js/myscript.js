@@ -6,7 +6,7 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65*/
 
 
-document.getElementById('genera').addEventListener('click', function () {
+    document.getElementById('genera').addEventListener('click', function () {
     //nome dell'utente 
     const userName = document.getElementById('name').value;
     console.log('Il tuo nome è:' + userName);
