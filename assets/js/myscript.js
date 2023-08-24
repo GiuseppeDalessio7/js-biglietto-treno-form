@@ -33,4 +33,6 @@ va applicato uno sconto del 40% per gli over 65*/
     }
     });
 
-    document.getElementById("text_name").innerHTML = Username;
+    document.getElementById("text_name").innerHTML = `Il nome è` + userName;
+
+    document.getElementById("price_tk").innerHTML = `Il prezzo è` + totalPrice;
