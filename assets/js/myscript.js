@@ -23,16 +23,27 @@ va applicato uno sconto del 40% per gli over 65*/
     console.log('Il costo del biglietto è:€ ' + totalPrice.toFixed(2));
     
     //va applicato uno sconto del 20% per i minorenni
-    if(age <= 18 ) {
+    if( age <= 18 ) {
         totalPrice = totalPrice - (totalPrice * 0.2)
         console.log('Il prezzo da pagare dopo uno sconto del 20% è: €'+ totalPrice.toFixed(2));
     } //va applicato uno sconto del 40% per gli over 65*/ 
-        else if (age >= 65) {
+        else if ( age >= 65) {
         totalPrice = totalPrice - (totalPrice * 0.4)
         console.log('Il prezzo da pagare dopo uno sconto del 40% è: €'+ totalPrice.toFixed(2));
     }
+
+    document.getElementById("text_name").innerHTML = `Dati passeggero ` + userName;
+
+    document.getElementById("price_tk").innerHTML = `Il prezzo è di: € ` + totalPrice.toFixed(2);
+
+    document.getElementById("carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
+
+    document.getElementById("code").innerHTML = Math.floor(Math.random() * 99999) + 1000;
+
+    document.getElementById("offer").innerHTML = `Biglietto Standard`  ;
+
+    // Math.floor(Math.random() * 10) + 1;
+
     });
 
-    document.getElementById("text_name").innerHTML = `Il nome è` + userName;
-
-    document.getElementById("price_tk").innerHTML = `Il prezzo è` + totalPrice;
+   
