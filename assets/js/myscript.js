@@ -5,6 +5,15 @@ il prezzo del biglietto è definito in base ai km (0.21 € al km)
 va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65*/
 
+
+//nome dell'utente
+const userName = (prompt('Quale è il tuo nome?'));
+// console.log('Il tuo nome è:' + userName);
+
+document.getElementById('name').innerHTML ='Il tuo nome è:' + userName;
+
+
+
 //Il numero di chilometri da percorrere
 const km = Number(prompt('Quanti chilometri devi percorrere?'));
 console.log('I chilometri da percorrere sono:' + km);
